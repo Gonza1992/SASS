@@ -1,0 +1,19 @@
+@import "./partials/vars";
+
+* body {
+    margin: 8px;
+    padding: 8px;
+    margin-bottom: 40px;
+    background-image: linear-gradient($gris , $rosado);
+}
+
+@font-face {
+    font-family: KANIT;
+    src: url( ../Kanit/Kanit-Medium.ttf);
+}
+
+#grilla {
+    color: $azulOscuro;
+    background-color: 0, $gris, 0.3 ;
+    font-family: KANIT;
+}
