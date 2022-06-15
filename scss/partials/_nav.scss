@@ -1,22 +1,25 @@
+$estilos: (
+    display: flex
+);
+@mixin sizes ($width, $height){
+    width: $width;
+    height: $height;
+}
 #titulo img{
     object-fit: contain;
-    width: 50px;
-    height: 50px;
+    @include sizes(50px, 50px);
 }
 
 #header {
     color: rgb(10, 4, 60);
     background-color: 0, $gris, 0.3;
-    display: flex;
+    display: map-get($estilos, display );
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
 }
 #nav {
-    color: rgb(10, 4, 60);
-    background-color: 0, $gris, 0.3;
-    display: flex;
-    align-items: center;
+    @extend #header;
     justify-content: center;
 }
 ul {

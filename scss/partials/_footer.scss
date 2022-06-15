@@ -1,5 +1,14 @@
+$estilos: (
+    display: flex
+);
+
+@mixin sizes ($width, $height){
+    width: $width;
+    height: $height;
+}
+
 #redes {
-    display: flex;
+    display: map-get($estilos, display );
     flex-direction: row;
     flex-wrap: wrap;
     gap: 5rem;
@@ -7,10 +16,10 @@
     & img {
         width: 50px;
         height: 50px;
+        @include sizes(50px, 50px)
         transition: 1;
         &:hover {
-            width: 55px;
-            height: 55px;
+            @include sizes (55px, 55px)
         }
     }
 }
@@ -21,7 +30,7 @@
 }
 
 footer {
-    display: flex;
+    display: map-get($estilos, display );
     flex-wrap: wrap;
     padding: 20px;
 }

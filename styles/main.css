@@ -18,7 +18,7 @@
   width: 50px;
   height: 50px; }
 
-#header {
+#header, #nav {
   color: #0a043c;
   background-color: 0, #bbbbbb, 0.3;
   display: flex;
@@ -27,10 +27,6 @@
   align-items: center; }
 
 #nav {
-  color: #0a043c;
-  background-color: 0, #bbbbbb, 0.3;
-  display: flex;
-  align-items: center;
   justify-content: center; }
 
 ul {
@@ -52,26 +48,22 @@ ul {
     ul li a:visited {
       color: blueviolet; }
 
-#galeria {
+#galeria, #musica {
   color: #0a043c;
   background-color: 0, #bbbbbb, 0.3;
   display: flex;
   justify-content: center; }
-  #galeria img {
+  #galeria img, #musica img {
     object-fit: contain;
-    width: 300px;
     height: 600px;
+    width: 300px;
     transition: 0.8s; }
-    #galeria img:hover {
-      width: 370px;
-      height: 700px; }
+    #galeria img:hover, #musica img:hover {
+      height: 700px;
+      width: 370px; }
 
 #musica {
-  color: #0a043c;
-  background-color: 0, #bbbbbb, 0.3;
-  display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   align-content: center;
   padding: 20px; }
 
@@ -96,6 +88,8 @@ ul {
   gap: 5rem;
   justify-content: center; }
   #redes img {
+    width: 50px;
+    height: 50px;
     width: 50px;
     height: 50px;
     transition: 1; }
