@@ -1,17 +1,12 @@
 $estilos: (
     display: flex
 );
-
-@mixin sizes ($width, $height) {
-    height: $height;
-    width: $width;
-}
 #galeria {
     color: rgb(10, 4, 60);
     background-color: 0, $gris, 0.3;
     display: map-get($estilos, display );
     justify-content: center;
-    & img {
+    img {
         object-fit: contain;
         @include sizes (300px, 600px);
         transition: 0.8s;
@@ -20,14 +15,12 @@ $estilos: (
         }
     }
 }
-
 #musica {
     @extend #galeria;
     flex-wrap: wrap;
     align-content: center;
     padding: 20px;
 }
-
 #bio {
     color: rgb(10, 4, 60);
     background-image: linear-gradient(45deg, $gris, $azulOscuro);
@@ -39,7 +32,7 @@ $estilos: (
     flex-wrap: wrap;
     align-content: center ;
     line-height: 40px;
-    & div {
+    div {
         text-align: justify;
     }
 }

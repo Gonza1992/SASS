@@ -1,19 +1,13 @@
 $estilos: (
     display: flex
 );
-
-@mixin sizes ($width, $height){
-    width: $width;
-    height: $height;
-}
-
 #redes {
     display: map-get($estilos, display );
     flex-direction: row;
     flex-wrap: wrap;
     gap: 5rem;
     justify-content: center;
-    & img {
+    img {
         width: 50px;
         height: 50px;
         @include sizes(50px, 50px)

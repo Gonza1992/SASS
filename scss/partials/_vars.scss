@@ -1,3 +1,7 @@
 $rosado: #ffe3d8;
 $gris: #bbbbbb;
 $azulOscuro: #0a043c;
+@mixin sizes ($width, $height){
+    width: $width;
+    height: $height;
+}

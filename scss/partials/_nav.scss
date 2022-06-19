@@ -1,10 +1,7 @@
 $estilos: (
     display: flex
 );
-@mixin sizes ($width, $height){
-    width: $width;
-    height: $height;
-}
+
 #titulo img{
     object-fit: contain;
     @include sizes(50px, 50px);
@@ -29,7 +26,7 @@ ul {
     flex-wrap: wrap;
     gap: 2rem;
     justify-content: center;
-        & li {
+        li {
             font-size: 16px;
             outline: none;
             transition: 0.8;
