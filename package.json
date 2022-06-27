@@ -1,7 +1,7 @@
 {
-  "name": "bootstrap-artist-web---gonzalo-sanchez",
+  "name": "GONZALO SANCHEZ - DJ Y PRODUCTOR DE MUSICA ELECTRONICA",
   "version": "1.0.0",
-  "description": "paquete",
+  "description": "Portal donde encontrarás Progressive House, Organic House y Deep House. Los estilos más melódicos de música electrónica.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
